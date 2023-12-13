@@ -11,6 +11,8 @@ import static ru.netology.web.data.DataHelper.*;
 
 public class MoneyTransferTest {
 
+
+
     DashboardPage dashboardPage;
     CardInfo firstCardInfo;
     CardInfo secondCardInfo;
@@ -24,7 +26,7 @@ public class MoneyTransferTest {
         dashboardPage = verificationPage.validVerify(verificationCode);
         firstCardInfo = getFirstCardInfo();
         secondCardInfo = getSecondCardInfo();
-    }
+        }
 
     @Test
     void shouldTransferFromFirstToSecond() {
